@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi IDB con Dexie</title>
+  </head>
+  <body>
+    <h1>Guardar datos en IndexedDB</h1>
+    <form id="dataForm">
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <input type="number" id="edad" placeholder="Edad" required />
+      <button type="submit">Guardar</button>
+    </form>
+
+    <h2>Datos guardados</h2>
+    <ul id="listaDatos"></ul>
+
+    <!-- Dexie desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/dexie@latest/dist/dexie.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
